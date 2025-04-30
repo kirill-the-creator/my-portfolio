@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>О Хозяине</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <h1 class="logo">Визитка</h1>
+        <nav class="nav">
+            <a href="html.html" class="nav__link">Главная</a>
+        </nav>
+    </div>
+</header>
+
+<main class="main">
+    <section class="intro-grid">
+        <div class="intro-photo">
+            <img src="photo/photo_2025-02-10_15-37-50.jpg" alt="фото Кирилла">
+            <h2 class="name-title">Кирилл, 21 год</h2>
+            <p class="location">г. Москва</p>
+        </div>
+        <div class="intro-description">
+            <p>Я начинающий фронтенд-разработчик и обожаю создавать полезные, понятные и адаптивные сайты.</p>
+            <p>На этом сайте ты найдешь мои эксперименты: To-Do приложение, музыкальный плеер и необычный калькулятор.</p>
+            <p>Уволился с работы, что бы начать карьеру в IT</p>
+        </div>
+    </section>
+
+    <section class="tools">
+        <div class="tool">
+            <h3>To-Do приложение</h3>
+            <input type="text" id="todo-input" placeholder="Добавить задачу...">
+            <button id="add-todo">Добавить</button>
+            <ul id="todo-list"></ul>
+        </div>
+
+        <div class="tool">
+            <h3>Музыкальный плеер</h3>
+            <audio controls id="audio-player">
+                <source src="audio/serega_pirat.mp3" type="audio/mpeg">
+                Твой браузер не поддерживает аудио.
+            </audio>
+        </div>
+
+        <div class="tool">
+            <h3>Калькулятор возраста кота</h3>
+            <label for="humanAge">Ваш возраст:</label>
+            <input type="number" id="humanAge" min="0" placeholder="Пример: 25">
+            <button id="calc-cat-age">Перевести</button>
+            <p id="catResult"></p>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Кирилл. Люблю котов.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

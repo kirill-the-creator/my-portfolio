@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Главная</title>
+  <link rel="stylesheet" href="cs.css"/>
+</head>
+<body>
+<header class="header">
+    <img src="photo/logo-cat.png" alt="Логотип кота" class="logo"/>
+    <nav class="nav">
+        <a href="#about" class="head">Обо мне</a>
+        <a href="#skill" class="head">Навыки</a>
+        <a href="#cat-age-calc" class="head">Возраст кота</a>
+    </nav>
+    <button class="button" onclick="toggleTheme()">Сменить тему</button>
+</header>
+
+<main class="grid">
+    <section class="main one" id="qwe">
+        <h1 class="hh">ДОБРЯК СКАДИ</h1>
+        <div class="jpg">
+            <img src="photo/skadi.jpg" alt="Кот Скади" class="cat"/>
+        </div>
+    </section>
+
+    <section class="main two" id="asd">
+        <h2>Скади Хомич. Разработчик.</h2>
+        <article id="about">
+            <h3>Обо мне</h3>
+            <p>Родился в подвале, мама меня бросила и нашли меня мои новые родители</p>
+            <p>Теперь я живу свою лучшую жизнь!</p>
+        </article>
+        <article id="skill">
+            <h3>Навыки</h3>
+            <ul class="ul">
+                <li>CSS</li>
+                <li>HTML5</li>
+                <li>JS</li>
+                <li>Вкусно готовлю</li>
+            </ul>
+        </article>
+    </section>
+
+    <aside class="main three" id="zxc">
+        <div class="contacts">
+            <div class="call">
+            <img src="photo/phone-call.png" alt="Телефон" class="phone"/>
+            <p>+7 920 024 02 76</p>
+            </div>
+        <div class="mail">
+            <img src="photo/email.png" alt="Почта" class="email"/>
+            <p>13zabl@mail.ru</p>
+        </div>
+        <a href="https://t.me/twopik" class="telegram" target="_blank" rel="noopener">
+            <img src="photo/telegam.png" alt="Telegram" class="telegram-icon"/>
+            <span>@twopik</span>
+        </a>
+        </div>
+    </aside>
+</main>
+
+<section class="main" id="cat-age-calc">
+    <h2>Калькулятор возраста кошек</h2>
+    <label for="catAge">Введите возраст кота (в годах):</label>
+    <input type="number" id="catAge" min="0" placeholder="Например, 3"/>
+    <button onclick="calculateCatAge()">Рассчитать</button>
+    <p id="result"></p>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-info">
+        <p>&copy; 2025 Мой сайт. Все права защищены.</p>
+        </div>
+        <nav class="footer-links">
+            <ul>
+                <li><a href="index.html">О хозяине</a></li>
+                <li><a href="https://t.me/twopik" target="_blank">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+<script src="script1.js"></script>
+</body>
+</html>

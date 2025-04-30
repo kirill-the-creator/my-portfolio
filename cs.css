@@ -1,0 +1,342 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #c9c9c9;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+  
+.header {
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: black 2px solid;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    transition: top 0.3s ease;
+}
+  
+.header.hide {
+    top: -100px;
+}
+  
+.nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+}
+  
+.head {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+  
+.head:hover {
+    color: black;
+}
+  
+.logo {
+    cursor: pointer;
+    height: 3em;
+    border-radius: 20px;
+}
+  
+.button {
+    font-size: 15px;
+    color: black;
+    border-radius: 20px;
+    border: 1px black solid;
+    padding: 5px 15px;
+    background-color: white;
+    cursor: pointer;
+}
+  
+.button:hover {
+    background-color: #c9c3c3;
+}
+  
+main {
+    padding-top: 80px;
+}
+  
+.grid {
+    display: grid;
+    margin: 3em 8em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 400px 1fr 150px;
+    gap: 10px;
+    grid-template-areas:
+      "q a a"
+      "q a a"
+      "z . .";
+}
+  
+.main {
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px black solid;
+    background-color: #f0f0f0;
+}
+  
+#qwe {
+    grid-area: q;
+}
+  
+#asd {
+    grid-area: a;
+}
+  
+#zxc {
+    grid-area: z;
+}
+  
+.jpg {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+  
+.cat {
+    height: 20em;
+    border-radius: 20px;
+    max-width: 100%;
+}
+  
+.hh {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+  
+#about, #skill {
+    padding: 10px;
+    border-left: 15px black solid;
+    border-radius: 7px;
+}
+  
+#skill {
+    margin-top: 10px;
+}
+
+.ul {
+    list-style-type: circle;
+}
+  
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0;
+    box-sizing: border-box;
+}
+  
+.call,
+.mail,
+.telegram {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 15px;
+}
+  
+.phone,
+.email,
+.telegram-icon {
+    height: 1em;
+}
+  
+
+.telegram {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-top: 10px;
+}
+
+.telegram img {
+    display: inline-block;
+}
+  
+.telegram:hover {
+    text-decoration: underline;
+}
+  
+#cat-age-calc {
+    margin-top: 40px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-top: 2px solid #999;
+    border-bottom: 2px solid #999;
+}
+  
+#cat-age-calc input {
+    padding: 8px;
+    font-size: 16px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    text-align: center;
+}
+  
+#cat-age-calc button {
+    padding: 8px 12px;
+    border-radius: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+#cat-age-calc button:hover {
+    background-color: #333;
+}
+  
+#cat-age-calc p {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 18px;
+}
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 14px;
+}
+  
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.footer-info {
+    text-align: left;
+}
+  
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+  
+.footer-links li {
+    margin-right: 20px;
+}
+  
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+  
+/* dark theme */
+.dark-theme {
+    background-color: #2e2e2e;
+    color: white;
+}
+  
+.dark-theme .main,
+.dark-theme #cat-age-calc {
+    background-color: #444;
+    color: white;
+    border-color: white;
+}
+  
+.dark-theme .header,
+.dark-theme .footer {
+    background-color: #444;
+}
+  
+.dark-theme .head {
+    color: white;
+}
+  
+.dark-theme .head:hover {
+    color: #ccc;
+}
+  
+.dark-theme .button {
+    background-color: #222;
+    color: white;
+    border: 1px solid #ccc;
+}
+  
+.dark-theme .button:hover {
+    background-color: #555;
+}
+  
+@media (max-width: 768px) {
+    .grid {
+      display: flex;
+      flex-direction: column;
+      margin: 1em;
+    }
+  
+    .nav {
+      flex-direction: column;
+      row-gap: 10px;
+      margin: 10px 0;
+    }
+  
+    .logo {
+      height: 4em;
+      margin-bottom: 10px;
+    }
+  
+    .cat {
+      width: 100%;
+      height: auto;
+    }
+  
+    .container {
+      flex-direction: column;
+      text-align: center;
+      row-gap: 10px;
+    }
+  
+    .footer-links ul {
+      justify-content: center;
+    }
+  
+    .footer-links li {
+      margin: 10px;
+    }
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}

@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.main {
+    flex: 1;
+    padding: 2rem 5vw;
+}
+
+.intro {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section-text {
+    font-size: 1rem;
+    max-width: 40rem;
+    line-height: 1.5;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tool {
+    padding: 1.5rem;
+    background-color: #f2f2f2;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0,0,0,0.1);
+}
+
+.tool h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.tool input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.3rem;
+}
+
+.tool button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.tool button:hover {
+    background-color: #555;
+}
+
+#todo-list {
+    margin-top: 1rem;
+    list-style: none;
+}
+
+#todo-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.5rem;
+    background-color: #eaeaea;
+    border-radius: 0.3rem;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2vw;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.intro-photo img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.2);
+}
+
+.intro-photo {
+    text-align: center;
+}
+
+.name-title {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 1rem;
+    color: #666;
+}
+
+.intro-description {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .intro-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .intro-description {
+        margin-top: 1rem;
+    }
+}
